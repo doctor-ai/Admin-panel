@@ -8,7 +8,6 @@ footer{
     padding: 0.5rem;
     display: flex;
     bottom: 0;
-    position: fixed;
     z-index: 1;
     width:  100%;
     align-items: center;
