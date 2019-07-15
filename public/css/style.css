@@ -12,6 +12,41 @@
 @import url('https://fonts.googleapis.com/css?family=PT+Sans&display=swap');
 @import url('https://fonts.googleapis.com/css?family=Roboto+Slab&display=swap');
 
+/* **************************** */
+/* Global CSS */
+
+.themeButton{
+    border:1px solid #1e99ff;  
+    background-color: #fff;
+    border-radius: 1rem;
+    margin: 1rem;
+    padding:0rem 2rem;
+    color:var(--themcolor);
+    box-shadow: none !important;
+    transition: all 150ms ease-in;
+}
+.themeButton:hover{
+    background-color: #1e99ff;
+    color:#fff !important;
+}
+.themeButton:active{
+    border: 1.5px solid var(--themcolor);
+    background-color: #ffffff;
+    color: var(--themcolor) !important;
+}
+.themeButton:focus{
+    border: 1.5px solid var(--themcolor);
+    background-color: #ffffff;
+    color: var(--black)  !important;
+}
+.content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height:100%;
+}
+/* ****************************** */
+
 /* *************************************************************** */
 /* starting Of Navigation */
 .nav-wrapper {
@@ -297,3 +332,241 @@ footer h6 {
 }
 
 /* *********** */
+/* Starting Of Desease Finder Home Screen */
+.nurseImage{
+    width: 70%;
+    }
+.deseaseContainer p{
+    font-size: 1rem;
+    text-align: justify;
+    color: #b7b7b7;
+}
+/* Ending Of Desease Finder Home Screen */
+
+/* starting Of deseaseform css */
+
+input[type="text"]{
+    outline: none !important;
+    border:1px solid var(--themcolor) !important;
+    box-shadow: none !important;
+    margin: 0rem 0rem 0rem 0rem !important;
+    border-radius: 0.5rem !important;
+}
+input[type="text"]:focus{
+    outline: none !important;
+    box-shadow: none !important;
+}
+.input-textarea{
+    outline: none !important;
+    border:1px solid var(--themcolor) !important;
+    border-radius: 0.5rem !important;
+    overflow: hidden;
+}
+textarea{
+    height: 6rem;
+    width: 110% !important; 
+    padding:1rem 2rem !important;
+    resize: none;
+}
+
+.labelContainer{
+    margin-bottom:1rem;
+
+}
+.labelContainer label{
+    font-size: 1rem;
+    color: var(--black);
+
+}
+@media (max-width:1000px){
+    textarea{
+        width:120% !important;
+    }
+}
+
+/* Ending Of deseaseform css */
+
+/*---------------------------------------desease list ---------------------------------------------------*/
+.user-section {
+    height: 100%;
+}
+
+.info {
+    display: flex;
+    justify-content: center;
+
+
+}
+
+.block-section .row {
+
+    margin: 0.0rem 0px;
+    border-bottom: 1px solid black;
+
+}
+
+
+.block-section {
+    width: 100%;
+    height: auto;
+
+}
+
+.row-content {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: baseline;
+}
+
+.row-content div:nth-child(1) {
+    display: flex;
+    flex-grow: 1;
+    color: var(--themcolor);
+    font-weight: 400;
+    flex-basis: 20rem !important;
+    margin-right: 1.0rem !important;
+   
+}
+
+.row-content div:nth-child(2) {
+    flex-grow: 150;
+    
+}
+
+.row-content div:nth-child(3) {
+    flex-grow: 1;
+}
+
+
+.row-content div:nth-child(4) {
+    display: flex;
+    flex-grow: 1;
+
+}
+
+/*content*/
+.row-content p {
+    font-size: 1.1rem;
+}
+
+.row-content label {
+    margin: 0px 15px;
+}
+
+.row-content .btn {
+
+    padding: 0px 1.8rem !important;
+    background-color: #fff;
+    color: #1E90FF;
+    border-radius: 20rem;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1rem;
+    margin: 0.7rem 0px 0.7rem 0rem;
+    border: 1px solid var(--themcolor);
+    transition: all 150ms ease-in;
+    box-shadow: none;
+
+}
+
+.row-content .btn:hover {
+    background-color: var(--themcolor);
+    color: #FFFFFF;
+}
+
+
+div hr{
+ border-color: #1E90FF;
+}
+/***************************** serch box *************************************/
+
+.form-box {
+    display: flex;
+    height: 100%;
+    max-width: 95%;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 1rem;
+    margin-bottom: 5rem;
+
+
+}
+.searchContainer {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    border: 1px solid var(--themcolor);
+    border-radius: 1rem;
+    justify-content: center;
+    padding-left: 1rem;
+  }
+  .searchInput {
+    outline: none !important;
+    border: none !important;
+    margin-bottom: -0.08rem !important;
+    color: var(--themcolor);
+  }
+  .searchInput::placeholder {
+    color: var(--themcolor);
+    font-size: 0.9rem;
+  }
+  input:not([type]),
+  input[type]:not(.browser-default),
+  input[type]:not(.browser-default):focus:not([readonly]) {
+    padding: 0.3rem 0.3rem;
+    height: 2rem;
+    outline: none !important;
+    border: none !important;
+  }
+  
+  .searchButton {
+    box-shadow: none;
+    padding: 0rem 2rem;
+    background-color: #1e90ff !important;
+    height: 100%;
+    border-bottom-right-radius: 0.8rem;
+    border-top-right-radius: 0.8rem;
+  }
+  .searchButton:hover {
+    box-shadow: none;
+  }
+  .searchButtonIcon {
+    color: var(--snow);
+  }
+  @media (max-width: 600px) {
+    .headerText {
+      text-align: center;
+    }
+  }
+
+/*********************pagination*******************************/
+.pagination {
+    display: inline-block;
+    margin-bottom: 2.7rem;
+}
+
+.pagination a1 {
+     border: 1px solid var(--themcolor) !important; 
+    color: var(--themcolor);
+    float: left;
+    border-radius: 50%; 
+    color: #1E90FF;
+    font-size: 0.2rem;
+    padding: 2px 3px;
+    text-decoration: none;
+    transition: background-color .3s;
+}
+.pagination a2 {
+   color: var(--themcolor);
+   float: left;
+   border-radius: 50%; 
+   color: #1E90FF;
+   font-size: 0.7rem;
+   padding: 10px 3px;
+   text-decoration: none;
+   transition: background-color .3s;
+}
+
+            
+
+                                                        /* and desease list */
