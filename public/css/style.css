@@ -369,21 +369,114 @@ input::placeholder {
     display: flex;
     justify-content: center;
     align-items: center;
+    
 }
 .signup{
     font-size: 13px;
     font-weight: 500;
 }
-  /* @media only screen and (min-width: 0){
+  @media only screen and (min-width: 0){
 html{
     font-size: 12px;
 }
-} */
+}
 
 
   /* end logi page */  
 /*---------------------------------------desease list ---------------------------------------------------*/
-.user-section {
+.desease-title{
+    width:90%;
+    margin:3rem 0rem;  
+}
+.deseasecontain{
+    font-size:2rem; 
+    font-weight: 500;
+}
+.borderline{
+    border: 1px solid #1e8ffe;
+     height: 0.1rem;
+    width:11rem;
+}
+.searchbtn{
+    text-align:end;
+}
+.deseasecontant{
+    color:#1e8ffe;
+     font-size:1.8rem; 
+    font-family: 'Roboto', sans-serif;
+}
+.dateLabel{
+    color: #d7d7d7; 
+    font-size:1.8rem;
+}
+.deseaselistfirst{
+    width:90%;
+    border-top:1px solid black;
+    border-bottom:1px solid black;
+    margin:0.2rem 0rem;
+}
+.deseaselist{
+    width:90%;
+    border-bottom:1px solid black;
+    margin:0rem 0rem;
+}
+.deseasename{
+    margin:1.2rem 0rem;
+}                      
+.listbutton{
+    display:flex;
+    justify-content:space-between;
+    margin:0.5rem 0rem;
+}
+.iconstyle{
+    color:red;
+}
+.editbtn{
+    margin-top:0.2rem !important;
+    margin-bottom:0.2rem !important;
+    border:1px solid var(--themcolor);  
+    background-color: var(--snow);
+    border-radius: 2rem;
+    padding: 5px 35px;
+    color: #1e8ffe;
+    transition: all 150ms ease-in;
+    font-size: 1.5rem;
+}
+.pagination {
+    display: inline-block;
+    margin-top: 1rem;
+}
+
+.pagination a1 {
+     border: 1px solid var(--themcolor) !important; 
+    color: var(--themcolor);
+    float: left;
+    border-radius: 50%; 
+    color: #1E90FF;
+    font-size: 0.2rem;
+    padding: 2px 3px;
+    text-decoration: none;
+    transition: background-color .3s;
+}
+.pagination a2 {
+   color: var(--themcolor);
+   float: left;
+   border-radius: 50%; 
+   color: #1E90FF;
+   font-size: 0.7rem;
+   padding: 10px 3px;
+   text-decoration: none;
+   transition: background-color .3s;
+} 
+
+@media (max-width:600px){
+    .dateLabel{
+        text-align:end;
+    }
+}
+
+
+/* .user-section {
     height: 100%;
     width: 95%;
 
@@ -445,7 +538,7 @@ html{
 
 }
 
-/*content*/
+/*content
 .row-content p {
     font-size: 1.1rem;
 }
@@ -484,7 +577,7 @@ div img{
 div hr{
  border-color: #1E90FF;
 }
-/***************************** serch box *************************************/
+/***************************** serch box ************************************
 
 .form-box {
     display: flex;
@@ -498,7 +591,7 @@ div hr{
 
 }
 
-/*********************pagination*******************************/
+/*********************pagination*******************************
 .pagination {
     display: inline-block;
     margin-bottom: 2.7rem;
@@ -524,21 +617,8 @@ div hr{
    padding: 10px 3px;
    text-decoration: none;
    transition: background-color .3s;
-}
+} */
 
-@media (max-width:600px){
-    .dateLabel{
-        text-align:end;
-    }
-}
-
-.deseaselist{
-    width:90%;border-top:1px solid black;
-    border-bottom:1px solid black;
-    margin:0.5rem 0rem;
-}
-.deseasename{
-    margin:0.5rem 0rem;
-}                                        
+            
 
                                                         /* and desease list */
