@@ -19,7 +19,6 @@
     border:1px solid #1e99ff;  
     background-color: #fff;
     border-radius: 1rem;
-    margin: 1rem;
     padding:0rem 2rem;
     color:var(--themcolor);
     box-shadow: none !important;
@@ -38,6 +37,12 @@
     border: 1.5px solid var(--themcolor);
     background-color: #ffffff;
     color: var(--black)  !important;
+}
+@media (max-width:800px){
+    .themeButton{
+        font-size:0.65rem !important;
+        margin:0rem;
+    }
 }
 .content{
     display: flex;
@@ -97,48 +102,29 @@
 /* *************************************************************** */
 /* Starting Of Sidedrawer */
 
-.side-nav {
-    width: 120px;
-    opacity: 0.9;
-    transition-delay: 0.2s !important;
-    transition-timing-function: linear;
-    transition: 0.2s ease;
-    background-color: #fff;
-    box-shadow: 0 4px 9px 0 rgba(0, 0, 0, 0.2);
-    overflow: hidden;
+.sidemenuIcon {
+    color:#757575;
 }
-
-.sidemenu-item:hover {
-    background-color: var(--themcolor);
-
-}
-
-.sidemenu-item:hover .material-icons,
-.sidemenu-item:hover .sidemenu-title {
-    color: white !important;
-
-}
-
-.sidemenu-link {
+.sidemenuText{
+    color: #757575;
     text-align: center;
-    margin-top: 0px;
+}
+.menuContainer{
+    padding:1rem 2rem;
+    transition: all 150ms ease-in;
+}
+.menuContainer:hover .sidemenuIcon,
+.menuContainer:hover .sidemenuText{
+    color:var(--snow);
+}
+.menuContainer:hover{
+    background-color: var(--themcolor);
 }
 
-.sidemenu-item i {
-    color: #757575;
-    font-size: 25px;
-    position: relative;
-    padding: 20px !important;
-
-}
-
-.sidemenu-item span {
-    color: #757575;
-    font-size: 15px !important;
-    text-decoration: none;
-    display: block !important;
-    margin-top: -15px !important;
-    padding-bottom: 15px !important;
+@media (max-width:600px){
+    .sidemenuText{
+        display: none;
+    }
 }
 
 /* Ending Of Sidedrawer */
@@ -268,6 +254,7 @@ footer h6 {
     padding:0rem 3rem;
     color:var(--black);
     transition: all 150ms ease-in;
+    box-shadow: none;
 }
 .services-header{
     font-weight: bold !important;
@@ -281,6 +268,7 @@ footer h6 {
 .card:hover .services-button{
     background-color: var(--themcolor);
     color:var(--snow) !important;
+    box-shadow: none;
 }
 .card:hover .services-header{
     color:var(--themcolor) !important;
@@ -351,6 +339,7 @@ input[type="text"]{
     box-shadow: none !important;
     margin: 0rem 0rem 0rem 0rem !important;
     border-radius: 0.5rem !important;
+    padding:0rem 1rem !important;
 }
 input[type="text"]:focus{
     outline: none !important;
@@ -364,8 +353,8 @@ input[type="text"]:focus{
 }
 textarea{
     height: 6rem;
-    width: 110% !important; 
-    padding:1rem 2rem !important;
+    width: 105% !important; 
+    padding:1rem 1rem !important;
     resize: none;
 }
 
@@ -380,16 +369,13 @@ textarea{
 }
 @media (max-width:1000px){
     textarea{
-        width:120% !important;
+        width:110% !important;
     }
 }
 
 /* Ending Of deseaseform css */
 
 /*---------------------------------------desease list ---------------------------------------------------*/
-.user-section {
-    height: 100%;
-}
 
 .info {
     display: flex;
@@ -510,14 +496,7 @@ div hr{
     color: var(--themcolor);
     font-size: 0.9rem;
   }
-  input:not([type]),
-  input[type]:not(.browser-default),
-  input[type]:not(.browser-default):focus:not([readonly]) {
-    padding: 0.3rem 0.3rem;
-    height: 2rem;
-    outline: none !important;
-    border: none !important;
-  }
+
   
   .searchButton {
     box-shadow: none;
@@ -540,33 +519,50 @@ div hr{
   }
 
 /*********************pagination*******************************/
-.pagination {
-    display: inline-block;
-    margin-bottom: 2.7rem;
-}
 
-.pagination a1 {
-     border: 1px solid var(--themcolor) !important; 
-    color: var(--themcolor);
-    float: left;
-    border-radius: 50%; 
-    color: #1E90FF;
-    font-size: 0.2rem;
-    padding: 2px 3px;
-    text-decoration: none;
-    transition: background-color .3s;
-}
-.pagination a2 {
-   color: var(--themcolor);
-   float: left;
-   border-radius: 50%; 
-   color: #1E90FF;
-   font-size: 0.7rem;
-   padding: 10px 3px;
-   text-decoration: none;
-   transition: background-color .3s;
-}
 
-            
+/*---------------------------------------desease list ---------------------------------------------------*/
 
-                                                        /* and desease list */
+.deseasecontent{
+    color:var(--themcolor);
+    font-size:1rem; 
+}
+.dateLabel{
+    color: #d7d7d7; 
+    font-size:1rem;
+}
+.deseaselistContainer{
+    border-bottom:1px solid #757575;
+}
+.deseaselist{
+    border-bottom:1px solid black;
+}
+.deseasename{
+    margin:0.5rem 0rem;
+}                      
+.listbutton{
+    display:flex;
+    justify-content:space-between;
+    margin:0.2rem 0rem;
+}
+.iconstyle{
+    color:red;
+    font-size: 2.2rem;
+}
+.editButton{
+    font-size:0.8em;
+}
+.listContainer{
+    margin:0rem 3rem;
+}
+@media (max-width:600px){
+    .dateLabel{
+        text-align:end;
+    }
+    .listContainer{
+        margin:0rem;
+    }
+}
+                                                   /* end desease list */
+
+        

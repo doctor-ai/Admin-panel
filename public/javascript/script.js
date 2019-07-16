@@ -3,11 +3,11 @@ let isOPen = true;
 function openslidemenu() {
     isOPen = !isOPen;
     if (isOPen === true) {
-        document.getElementById('side-menu').style.width = "120px";
+        document.getElementById('side-menu').style.display = "block";
         document.getElementById("cancel").innerHTML = "arrow_back";
 
     } else {
-        document.getElementById('side-menu').style.width = "0px";
+        document.getElementById('side-menu').style.display = "none";
         document.getElementById("cancel").innerHTML = "menu";
     }
 }
